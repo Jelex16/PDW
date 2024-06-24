@@ -1,0 +1,13 @@
+.blank-card.card-A {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 350px; /* Ajusta el alto según tus necesidades */
+    background-color: #ffffff;
+    border: 1px solid #a200ff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

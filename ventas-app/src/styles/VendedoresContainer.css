@@ -1,0 +1,8 @@
+/* src/styles/VendedoresContainer.css */
+
+.vendedores-container {
+    border: 2px solid #000000; 
+    padding: 20px; 
+    width: 90%; 
+    margin: 20px auto; 
+}

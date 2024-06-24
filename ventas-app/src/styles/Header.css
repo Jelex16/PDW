@@ -1,0 +1,73 @@
+/* src/styles/Header.css */
+
+.header {
+    background-color: #22232a; 
+    color: #f7f7f6; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-left h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.header-right a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px; 
+    color: #f7f7f6; 
+    font-size: 14px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 2px; 
+}
+
+.header-right a:hover {
+    background: #46413b2d; 
+    color: #bebab4; 
+}
+
+.header-right a span {
+    position: absolute;
+    display: block;
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #46413b);
+    animation: btn-anim1 2s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}

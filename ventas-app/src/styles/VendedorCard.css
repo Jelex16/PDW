@@ -1,0 +1,76 @@
+/* src/styles/VendedorCard.css */
+.vendedor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+.vendedor-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+
+
+.vendedor-card .vendedor-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.vendedor-card h2 {
+    color: #fff;
+    margin: 8px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.vendedor-card p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.vendedor-card .edit-button {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.vendedor-card .edit-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .vendedor-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vendedor-card img {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+

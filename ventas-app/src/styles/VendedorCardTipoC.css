@@ -1,0 +1,20 @@
+.blank-card {
+    width: 90%;
+    height: 350px; 
+    background-color: #ffffff;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el texto dentro del recuadro blanco */
+.blank-card p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}

@@ -1,0 +1,127 @@
+.tipo-carta-selector-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; 
+    width: 100%; 
+    max-height: 800px;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid black;
+}
+
+.izquierda {
+    flex-basis: 25%; 
+    width: 25%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box; 
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.derecha {
+    flex-basis: 75%; 
+    width: 75%; 
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box; 
+    font-size: 25px;
+    text-align: center;
+}
+
+.tipos-container {
+    border-right: 1px solid #ccc; 
+    box-sizing: border-box;
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.tipo-carta-option {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+    cursor: pointer;
+    width: 100%;
+}
+
+.tipo-carta-option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.tipo-carta-preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tipo-carta-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Paleta de colores */
+
+.tipo-carta-selector-container {
+    background-color: #f0f0f0;
+}
+
+.izquierda {
+    background-color: #ffffff; 
+}
+
+.derecha {
+    background-color: #ffffff; 
+}
+
+.tipos-container {
+    background-color: #f9f9f9; 
+}
+
+.tipo-carta-option {
+    background-color: #ffffff; 
+}
+
+.tipo-carta-option:hover {
+    background-color: #e0e0e0; 
+}
+
+.tipo-carta-preview-container {
+    background-color: #f0f0f0; 
+}
+
+.tipo-carta-preview {
+    background-color: #ffffff; 
+}
+
+.estatus-container {
+    margin-top: 20px;
+    font-size: 25px;
+}
+  
+.estatus-container label {
+    margin-right: 10px;
+    font-size: 25px;
+}
+  
+.estatus-container select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 0;
+}
+  
+.estatus-container select option {
+    font-size: 14px;
+    border-radius: 0;
+}

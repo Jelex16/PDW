@@ -1,0 +1,13 @@
+.blank-card.card-B {
+    width: 90%;
+    height: 350px; 
+    background-color: #ffffff;
+    border: 1px solid #15ff00;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

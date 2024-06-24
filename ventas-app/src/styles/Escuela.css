@@ -1,0 +1,158 @@
+/* src/styles/Escuela.css */
+.escuela-content {
+    margin-top: 60px;
+}
+
+.escuela-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    margin: 25px;
+    background-color: rgba(11, 31, 47, 0.987); 
+    border: 4px solid rgba(11, 31, 47, 0.987);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.479);
+    max-height: 300px; 
+}
+
+.escuela-card-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.utm-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.escuela-card-right {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.utm-title {
+    font-size: 30px;
+    color: #f7f7f6; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.vendedores-count {
+    font-size: 15px;
+    color: #f7f7f6; 
+    margin: 20px 0;
+    text-align: center;
+}
+
+.escuela-btn {
+    color: #f7f7f6; 
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #22232a; 
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: #46413b; 
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.escuela-btn:hover {
+    background-color: #22232a; 
+    color: #f7f7f6; 
+}
+
+.escuela-btn:focus {
+    outline: none;
+}
+
+
+.escuela-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f7f7f6; 
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid #22232a; 
+    background: #46413b; 
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.escuela-btn span {
+    position: absolute;
+    display: block;
+}
+
+.escuela-btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #f7f7f6;
+    transition: all 0.3s;
+}
+
+.escuela-btn:hover span:nth-child(1) {
+    left: 100%;
+}
+
+.escuela-btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: #f7f7f6;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+}
+
+.escuela-btn:hover span:nth-child(2) {
+    top: 100%;
+}
+
+.escuela-btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: #f7f7f6;
+    transition: all 0.3s;
+    transition-delay: 0.2s;
+}
+
+.escuela-btn:hover span:nth-child(3) {
+    right: 100%;
+}
+
+.escuela-btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: #f7f7f6;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+}
+
+.escuela-btn:hover span:nth-child(4) {
+    bottom: 100%;
+}
+
+.escuela-btn:hover {
+    color: #f7f7f6; 
+    background-color: #22232a; 
+}

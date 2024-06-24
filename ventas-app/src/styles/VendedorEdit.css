@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #BEBAB4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='123' height='123' viewBox='0 0 200 200'%3E%3Cpolygon fill='%2322232A' fill-opacity='0.25' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+}
+
+#root {
+    height: 100%;
+}
+
+.vendedor-edit-container {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 10px;
+    height: 700px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resolviendo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 550px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.producto-form-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.vendedor-edit-left {
+    width: 27%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vendedor-edit-right {
+    width: 70%;
+    height: 75%;
+}
+
+.vendedor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(11, 31, 47, 0.987);
+}
+
+.vendedor-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+
+.vendedor-card .vendedor-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vendedor-card h2 {
+    margin: 8px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.vendedor-card p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.vendedor-card .edit-button {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.vendedor-card .edit-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+}
+
+.tipo-carta-selector-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 2px solid rgba(11, 31, 47, 0.987);
+    height: 575px;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button .text {
+  
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+}
+
+button .icon {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, width 0.3s;
+}
+
+button svg {
+    width: 15px;
+    fill: #eee;
+    transition: transform 0.3s;
+}
+
+button.delete-button {
+    width: 150px;
+    height: 50px;
+    background: #e62222;
+    margin-right: 10px; /* Añadir margen derecho */
+}
+
+button.delete-button .icon {
+    background: #c41b1b;
+}
+
+button.delete-button:hover {
+    background: #ff3636;
+}
+
+button.delete-button:hover .text {
+    color: transparent;
+}
+
+button.delete-button:hover .icon {
+    width: 150px;
+    transform: translateX(-100%);
+}
+
+button.delete-button:focus {
+    outline: none;
+}
+
+button.delete-button:active .icon svg {
+    transform: scale(0.8);
+}
+
+button.guardar-button {
+    width: 150px;
+    height: 50px;
+    background: #28a745;
+}
+
+button.guardar-button .icon {
+    background: #218838;
+}
+
+button.guardar-button:hover {
+    background: #34c759;
+}
+
+button.guardar-button:hover .text {
+    color: transparent;
+}
+
+button.guardar-button:hover .icon {
+    width: 150px;
+    transform: translateX(-100%);
+}
+
+button.guardar-button:focus {
+    outline: none;
+}
+
+button.guardar-button:active .icon svg {
+    transform: scale(0.8);
+}
+
+.guardar-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(11, 31, 47, 0.987);
+    color: white;
+}
+
+.guardar-form h3 {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.horario-inputs {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.horario-inputs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horario-inputs label {
+    margin-bottom: 5px;
+}
+
+.new-btn {
+    width: 70px;
+    height: 30px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.new-btn:hover {
+    background: #ffffff;
+}
+
+.edit-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(11, 31, 47, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    z-index: 1000; /* Ensuring it appears on top */
+}
+
+.edit-form .user-box {
+    position: relative;
+}
+
+.edit-form .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.edit-form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.edit-form .user-box input:focus ~ label,
+.edit-form .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+}
+
+.edit-form .guardar-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-form .guardar-button:hover {
+    background: #ffffff;
+    color: #fff;
+}
+
+.edit-form .guardar-button span {
+    position: absolute;
+    display: block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+
+
+.guardar-button-custom {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .guardar-button-custom:hover {
+    background: rgba(11, 31, 47, 0.987);
+    color: #fff;
+  }
+  
+  .guardar-button-custom span {
+    position: relative;
+    display: block;
+  }
+  
+  .guardar-button-custom span:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, #ffffff);
+    animation: btn-anim1 2s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .new-btn {
+
+    background-color: rgba(11, 31, 47, 0.987);
+  
+  cursor: pointer;
+}
+
+.new-btn:hover {
+  background: #46413b5d;
+  color: #fff;
+}
+
+.new-btn span {
+  position: absolute;
+  display: block;
+}
+
+.new-btn span:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: -100%;
+  background: linear-gradient(90deg, transparent, #03f40f);
+  animation: btn-anim1 2s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
